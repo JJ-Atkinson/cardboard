@@ -1,3 +1,28 @@
+This is a fork of the fulcro getting started app.
+
+Issues:
+
+- Code block parsing is unpredictable: 
+  - does not handel (s/def) correctly.
+  - does sometimes put two defs in the same block.
+  - sometimes includes the header line in the code.
+
+ - Running
+ 
+```bash
+npx shadow-cljs server
+-- start a server
+
+-- be sure to hover and start the :main build in the server page (port 9630)
+
+clojure -A:dev -J-Dtrace
+> (start)
+> (stop)
+
+> (restart) ; reload server code
+> (tools-ns/refresh) ; full reload if hot reload breaks
+```
+
 == The Project
 
 NOTE: The YouTube videos and Developer's Guide are slightly out of date with respect to this template.  This template
